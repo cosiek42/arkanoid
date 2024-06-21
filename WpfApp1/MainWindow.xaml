@@ -1,0 +1,80 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="{Binding Title}" Height="760" Width="1020" ResizeMode="NoResize" FocusManager.FocusedElement="{Binding ElementName=GameArea}">
+    <Canvas Name="GameArea" Focusable="True" Background="#0F00B9" KeyDown="KeyIsDown" KeyUp="KeyIsUp">
+        <Rectangle Name="Player" Fill="#BCBCBC" Height="15" Width="84" Canvas.Left="470" Canvas.Top="706" HorizontalAlignment="Center" VerticalAlignment="Top"></Rectangle>
+        <Ellipse Name="Ball" Fill="White" Height="15" Width="16" Canvas.Left="504" Canvas.Top="691" HorizontalAlignment="Center" VerticalAlignment="Top"></Ellipse>
+        <Rectangle Name="Block00" Fill="Silver" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="132" VerticalAlignment="Center" Canvas.Left="10"></Rectangle>
+        <Rectangle x:Name="Block01" Fill="Silver" Width="85" Height="23" Canvas.Top="132" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="100"/>
+        <Rectangle x:Name="Block02" Fill="Silver" Width="85" Height="23" Canvas.Top="132" Canvas.Left="190" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Rectangle x:Name="Block03" Fill="Silver" Width="85" Height="23" Canvas.Top="132" Canvas.Left="280" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Rectangle x:Name="Block04" Fill="Silver" Width="85" Height="23" Canvas.Top="132" Canvas.Left="370" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Rectangle x:Name="Block05" Fill="Silver" Width="85" Height="23" Canvas.Top="132" Canvas.Left="460" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Rectangle x:Name="Block06" Fill="Silver" Width="85" Height="23" Canvas.Top="132" Canvas.Left="550" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Rectangle x:Name="Block07" Fill="Silver" Width="85" Height="23" Canvas.Top="132" Canvas.Left="640" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Rectangle x:Name="Block08" Fill="Silver" Width="85" Height="23" Canvas.Top="132" Canvas.Left="730" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Rectangle x:Name="Block09" Fill="Silver" Width="85" Height="23" Canvas.Top="132" Canvas.Left="820" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Rectangle x:Name="Block010" Fill="Silver" Width="85" Height="23" Canvas.Top="132" Canvas.Left="910" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Rectangle Name="Block10" Fill="Red" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="160" VerticalAlignment="Center" Canvas.Left="10"></Rectangle>
+        <Rectangle Name="Block11" Fill="Red" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="160" VerticalAlignment="Center" Canvas.Left="100"></Rectangle>
+        <Rectangle Name="Block12" Fill="Red" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="160" VerticalAlignment="Center" Canvas.Left="190"></Rectangle>
+        <Rectangle Name="Block13" Fill="Red" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="160" VerticalAlignment="Center" Canvas.Left="280"></Rectangle>
+        <Rectangle Name="Block14" Fill="Red" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="160" VerticalAlignment="Center" Canvas.Left="370"></Rectangle>
+        <Rectangle Name="Block15" Fill="Red" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="160" VerticalAlignment="Center" Canvas.Left="460"></Rectangle>
+        <Rectangle Name="Block16" Fill="Red" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="160" VerticalAlignment="Center" Canvas.Left="550"></Rectangle>
+        <Rectangle Name="Block17" Fill="Red" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="160" VerticalAlignment="Center" Canvas.Left="640"></Rectangle>
+        <Rectangle Name="Block18" Fill="Red" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="160" VerticalAlignment="Center" Canvas.Left="730"></Rectangle>
+        <Rectangle Name="Block19" Fill="Red" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="160" VerticalAlignment="Center" Canvas.Left="820"></Rectangle>
+        <Rectangle Name="Block110" Fill="Red" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="160" VerticalAlignment="Center" Canvas.Left="910"></Rectangle>
+        <Rectangle Name="Block20" Fill="Yellow" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="188" VerticalAlignment="Center" Canvas.Left="10"></Rectangle>
+        <Rectangle Name="Block21" Fill="Yellow" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="188" VerticalAlignment="Center" Canvas.Left="100"></Rectangle>
+        <Rectangle Name="Block22" Fill="Yellow" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="188" VerticalAlignment="Center" Canvas.Left="190"></Rectangle>
+        <Rectangle Name="Block23" Fill="Yellow" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="188" VerticalAlignment="Center" Canvas.Left="280"></Rectangle>
+        <Rectangle Name="Block24" Fill="Yellow" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="188" VerticalAlignment="Center" Canvas.Left="370"></Rectangle>
+        <Rectangle Name="Block25" Fill="Yellow" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="188" VerticalAlignment="Center" Canvas.Left="460"></Rectangle>
+        <Rectangle Name="Block26" Fill="Yellow" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="188" VerticalAlignment="Center" Canvas.Left="550"></Rectangle>
+        <Rectangle Name="Block27" Fill="Yellow" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="188" VerticalAlignment="Center" Canvas.Left="640"></Rectangle>
+        <Rectangle Name="Block28" Fill="Yellow" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="188" VerticalAlignment="Center" Canvas.Left="730"></Rectangle>
+        <Rectangle Name="Block29" Fill="Yellow" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="188" VerticalAlignment="Center" Canvas.Left="820"></Rectangle>
+        <Rectangle Name="Block210" Fill="Yellow" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="188" VerticalAlignment="Center" Canvas.Left="910"></Rectangle>
+        <Rectangle Name="Block30" Fill="Blue" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="216" VerticalAlignment="Center" Canvas.Left="10"></Rectangle>
+        <Rectangle Name="Block31" Fill="Blue" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="216" VerticalAlignment="Center" Canvas.Left="100"></Rectangle>
+        <Rectangle Name="Block32" Fill="Blue" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="216" VerticalAlignment="Center" Canvas.Left="190"></Rectangle>
+        <Rectangle Name="Block33" Fill="Blue" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="216" VerticalAlignment="Center" Canvas.Left="280"></Rectangle>
+        <Rectangle Name="Block34" Fill="Blue" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="216" VerticalAlignment="Center" Canvas.Left="370"></Rectangle>
+        <Rectangle Name="Block35" Fill="Blue" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="216" VerticalAlignment="Center" Canvas.Left="460"></Rectangle>
+        <Rectangle Name="Block36" Fill="Blue" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="216" VerticalAlignment="Center" Canvas.Left="550"></Rectangle>
+        <Rectangle Name="Block37" Fill="Blue" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="216" VerticalAlignment="Center" Canvas.Left="640"></Rectangle>
+        <Rectangle Name="Block38" Fill="Blue" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="216" VerticalAlignment="Center" Canvas.Left="730"></Rectangle>
+        <Rectangle Name="Block39" Fill="Blue" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="216" VerticalAlignment="Center" Canvas.Left="820"></Rectangle>
+        <Rectangle Name="Block310" Fill="Blue" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="216" VerticalAlignment="Center" Canvas.Left="910"></Rectangle>
+        <Rectangle Name="Block40" Fill="MediumPurple" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="244" VerticalAlignment="Center" Canvas.Left="10"></Rectangle>
+        <Rectangle Name="Block41" Fill="MediumPurple" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="244" VerticalAlignment="Center" Canvas.Left="100"></Rectangle>
+        <Rectangle Name="Block42" Fill="MediumPurple" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="244" VerticalAlignment="Center" Canvas.Left="190"></Rectangle>
+        <Rectangle Name="Block43" Fill="MediumPurple" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="244" VerticalAlignment="Center" Canvas.Left="280"></Rectangle>
+        <Rectangle Name="Block44" Fill="MediumPurple" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="244" VerticalAlignment="Center" Canvas.Left="370"></Rectangle>
+        <Rectangle Name="Block45" Fill="MediumPurple" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="244" VerticalAlignment="Center" Canvas.Left="460"></Rectangle>
+        <Rectangle Name="Block46" Fill="MediumPurple" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="244" VerticalAlignment="Center" Canvas.Left="550"></Rectangle>
+        <Rectangle Name="Block47" Fill="MediumPurple" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="244" VerticalAlignment="Center" Canvas.Left="640"></Rectangle>
+        <Rectangle Name="Block48" Fill="MediumPurple" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="244" VerticalAlignment="Center" Canvas.Left="730"></Rectangle>
+        <Rectangle Name="Block49" Fill="MediumPurple" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="244" VerticalAlignment="Center" Canvas.Left="820"></Rectangle>
+        <Rectangle Name="Block410" Fill="MediumPurple" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="244" VerticalAlignment="Center" Canvas.Left="910"></Rectangle>
+        <Rectangle Name="Block50" Fill="LightGreen" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="272" VerticalAlignment="Center" Canvas.Left="10"></Rectangle>
+        <Rectangle Name="Block51" Fill="LightGreen" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="272" VerticalAlignment="Center" Canvas.Left="100"></Rectangle>
+        <Rectangle Name="Block52" Fill="LightGreen" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="272" VerticalAlignment="Center" Canvas.Left="190"></Rectangle>
+        <Rectangle Name="Block53" Fill="LightGreen" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="272" VerticalAlignment="Center" Canvas.Left="280"></Rectangle>
+        <Rectangle Name="Block54" Fill="LightGreen" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="272" VerticalAlignment="Center" Canvas.Left="370"></Rectangle>
+        <Rectangle Name="Block55" Fill="LightGreen" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="272" VerticalAlignment="Center" Canvas.Left="460"></Rectangle>
+        <Rectangle Name="Block56" Fill="LightGreen" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="272" VerticalAlignment="Center" Canvas.Left="550"></Rectangle>
+        <Rectangle Name="Block57" Fill="LightGreen" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="272" VerticalAlignment="Center" Canvas.Left="640"></Rectangle>
+        <Rectangle Name="Block58" Fill="LightGreen" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="272" VerticalAlignment="Center" Canvas.Left="730"></Rectangle>
+        <Rectangle Name="Block59" Fill="LightGreen" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="272" VerticalAlignment="Center" Canvas.Left="820"></Rectangle>
+        <Rectangle Name="Block510" Fill="LightGreen" Width="85" Height="23" HorizontalAlignment="Left" Canvas.Top="272" VerticalAlignment="Center" Canvas.Left="910"></Rectangle>
+    </Canvas>
+</Window>
